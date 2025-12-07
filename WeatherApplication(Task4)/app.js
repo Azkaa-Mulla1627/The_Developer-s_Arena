@@ -1,4 +1,4 @@
-const API_KEY = '11b4457dfd4b69ce8115124acad5a35f';
+const API_KEY = 'OpenWeatherAPIKey';
 const BASE = 'https://api.openweathermap.org/data/2.5/weather';
 
 const searchForm = document.getElementById('searchForm');
@@ -139,4 +139,5 @@ function tempColor(t){
 function showLoader(show){ loader.classList.toggle('hidden',!show);}
 function showError(msg){ errorEl.textContent=msg; errorEl.classList.remove('hidden'); result.classList.remove('show'); }
 function clearUI(){ errorEl.classList.add('hidden'); errorEl.textContent=''; result.classList.remove('show'); }
+
 function capitalize(s){ return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
