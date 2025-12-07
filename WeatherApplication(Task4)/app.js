@@ -141,3 +141,4 @@ function showError(msg){ errorEl.textContent=msg; errorEl.classList.remove('hidd
 function clearUI(){ errorEl.classList.add('hidden'); errorEl.textContent=''; result.classList.remove('show'); }
 
 function capitalize(s){ return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
+
